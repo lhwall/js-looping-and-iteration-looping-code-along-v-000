@@ -9,9 +9,10 @@ function coinFlip(){
   return Math.random() >= 0.5;
 }
 
-let tailsCount = 0
+
 
 function tailsNeverFails(){
+  let tailsCount = 0
   while (coinFlip()){
     tailsCount++
   }
