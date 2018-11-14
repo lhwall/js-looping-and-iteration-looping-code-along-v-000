@@ -4,3 +4,16 @@ function printBadges(array){
   console.log("Welcome " + array[i] + "! You are employee #" + (i + 1) +".")
   return array
 }
+
+function coinFlip(){
+  return Math.random() >= 0.5;
+}
+
+function tailsNeverFails(){
+  let tailsCount = 0
+  while (coinFlip()){
+    tailsCount++
+    tailsNeverFails()
+  }
+  console.log("You got " + tailsCount + "tails in a row!")
+}
