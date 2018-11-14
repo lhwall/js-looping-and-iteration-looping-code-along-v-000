@@ -8,13 +8,12 @@ function printBadges(array){
 function coinFlip(){
   return Math.random() >= 0.5;
 }
-  let tailsCount = 0
+
+let tailsCount = 0
 
 function tailsNeverFails(){
-
   while (coinFlip()){
     tailsCount++
-    tailsNeverFails()
   }
   console.log("You got " + tailsCount + "tails in a row!")
 }
